@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin box($height: 100px, $width: 100px, $chotu: black) {
+    height: $height;
+    width: $width;
+    border: 1px solid $chotu;
+}
+
+.a {
+    @include box(100px, 200px, green);
+}
+
+.b {
+    @include box;
+}
